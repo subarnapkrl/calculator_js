@@ -18,11 +18,8 @@ const division=function(num1,num2)
     return num1/num2;
 }
 
-// console.log(addition(121,11));
-// console.log(subtraction(121,11));
-// console.log(multiplication(121,11));
-// console.log(division(121,11));
 
+//Various Operators for Calculator
 const operate=function(operator,number1,number2)
 {
     if(operator=="+")
@@ -46,4 +43,3 @@ const operate=function(operator,number1,number2)
     }
 }
 
-console.log(operate("*",10,20));
