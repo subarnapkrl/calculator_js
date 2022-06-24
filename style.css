@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Staatliches', cursive;
+    line-height: 1.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3FCBF;
+    
+}
+
+#calculator
+{
+    background-color: #00FFC6;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px ;
+
+}
+.display
+{
+    background-color: #FFDCAE;
+    height: 50px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #B09B71;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.digits
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.btn{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #47B5FF;
+}
+.btn:nth-child(16)
+{
+    background-color: #F94C66;
+}
+.btn:nth-child(16):hover{
+    background-color: #FFA500;
+}
+.btn:nth-child(15)
+{
+    background-color: #F5DF99;
+}
+.btn.btn:nth-child(15):hover{
+    background-color: #F47C7C;
+}
+.btn:nth-child(4){
+background-color: #FFE6E6;
+}
+.btn:nth-child(4):hover{
+    background-color: #40DFEF;
+}
+.btn:nth-child(8){
+    background-color: #FFE6E6;
+}
+.btn:nth-child(8):hover{
+    background-color: #40DFEF;
+}
+.btn:nth-child(12){
+        background-color: #FFE6E6;
+}
+.btn:nth-child(12):hover{
+    background-color: #40DFEF;
+}
+.btn:nth-child(14){
+    background-color: #FFE6E6;
+}
+.btn:nth-child(14):hover{
+    background-color: #40DFEF;
+}
+
+.result{
+    font-size: 36px;
+}
