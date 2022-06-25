@@ -43,3 +43,18 @@ const operate=function(operator,number1,number2)
     }
 }
 
+
+let buttons=document.querySelectorAll(".btn");
+
+buttons.forEach(function(button){
+    button.addEventListener("click",function(e){
+        let displayDiv=document.querySelector(".display");
+        let clickedBtn=document.createElement("div");
+        clickedBtn.classList.add("result");
+        clickedBtn.textContent=e.target.id;
+    
+        displayDiv.appendChild(clickedBtn);
+
+    })
+    
+})
