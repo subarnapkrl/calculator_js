@@ -1,21 +1,33 @@
 const addition=function(num1,num2)
 {
-   return num1+num2;
+   let sum= num1+num2;
+   let resultDisplay=document.querySelector("#display");
+   resultDisplay.textContent=sum;
 }
 
 const subtraction=function(num1,num2)
 {
-    return num1-num2;
+    let difference= num1-num2;
+    let resultDisplay=document.querySelector("#display");
+    resultDisplay.textContent=difference;
 }
 
 const multiplication=function(num1,num2)
 {
-    return num1*num2;
+    let product= num1*num2;
+    let resultDisplay=document.querySelector("#display");
+    resultDisplay.textContent=product;
 }
 
 const division=function(num1,num2)
 {
-    return num1/num2;
+    let divide= num1/num2;
+    if(divide=="Infinity")
+    {
+        return alert("ERROR!CANNOT DIVIDE BY ZERO");
+    }
+    let resultDisplay=document.querySelector("#display");
+    resultDisplay.textContent=divide;
 }
 
 
@@ -24,37 +36,24 @@ const operate=function(operator,number1,number2)
 {
     if(operator=="+")
     {
-        return addition(number1,number2);
+         addition(number1,number2);
     }
     else if(operator=="-")
     {
-        return subtraction(number1,number2);
+         subtraction(number1,number2);
     }
     else if(operator=="*")
     {
-        return multiplication(number1,number2);
+         multiplication(number1,number2);
     }
     else if(operator=="/")
     {
-        return division(number1,number2);
+        division(number1,number2);
     }
     else{
-        return console.log("Invalid Operator!");
+         console.log("Invalid Operator!");
     }
 }
 
 
-let buttons=document.querySelectorAll(".btn");
 
-buttons.forEach(function(button){
-    button.addEventListener("click",function(e){
-        let displayDiv=document.querySelector(".display");
-        let clickedBtn=document.createElement("div");
-        clickedBtn.classList.add("result");
-        clickedBtn.textContent=e.target.id;
-    
-        displayDiv.appendChild(clickedBtn);
-
-    })
-    
-})
