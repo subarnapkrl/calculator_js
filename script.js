@@ -68,8 +68,8 @@ function processCalculator()
 {
     const getCalculatorClicked=function()
     {
-        const btns=document.querySelectorAll('.btn');
-        btns.forEach((button)=>{
+        const operandbtns=document.querySelectorAll('.operand');
+        operandbtns.forEach((button)=>{
             button.addEventListener('click',()=>{
                 savedValue=button.innerHTML;
                 const resultDisplay=document.querySelector('.display');
@@ -91,8 +91,8 @@ function processCalculator()
 
     const getCalculatorOperatorSelection=function()
     {
-        const btns=document.querySelectorAll('.btn');
-        btns.forEach((button)=>{
+        const operatorbtns=document.querySelectorAll('.operator');
+        operatorbtns.forEach((button)=>{
             button.addEventListener('click',()=>{
                 operator=button.innerHTML;
                 tempOperatorArray.push(operator);
@@ -105,7 +105,7 @@ function processCalculator()
 
     const calculation=function()
     {
-        const equalBtn=document.querySelector('#equals');
+        const equalBtn=document.querySelector('.equals');
         equalBtn.addEventListener('click',()=>{
             const calcDisplay = document.querySelector(".display");
                 num1 = parseInt(num1);
