@@ -29,6 +29,7 @@ body{
 }
 .display
 {
+    font-size: 36px;
     background-color: #FFDCAE;
     height: 50px;
     width: 95%;
@@ -99,8 +100,4 @@ background-color: #FFE6E6;
 }
 .btn:nth-child(14):hover{
     background-color: #40DFEF;
-}
-
-.result{
-    font-size: 36px;
 }
