@@ -88,5 +88,11 @@ function operateButtons()
     })
 }
 
+clearBtn.addEventListener("click",function()
+{
+    currentValue.innerHTML="0";
+    lastValue.innerHTML=" ";
+})
+
 numberBtn();
 operateButtons();
