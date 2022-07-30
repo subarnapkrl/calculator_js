@@ -94,5 +94,12 @@ clearBtn.addEventListener("click",function()
     lastValue.innerHTML=" ";
 })
 
+deleteBtn.addEventListener("click",function()
+{
+    currentValue.innerHTML="0";
+    lastValue.innerHTML=" ";
+    ifTrue=false;
+})
+
 numberBtn();
 operateButtons();
