@@ -9,6 +9,7 @@ const equalBtn=document.querySelector(".equal");
 let num1=0;
 let num2=0;
 let ifTrue=false;
+let operaterSign;
 
 
 function numberBtn()
@@ -65,4 +66,27 @@ function operate(operater, num1, num2) {
     }
 };
 
+
+function operateButtons()
+{
+    operateBtn.forEach((btn)=>{
+        btn.addEventListener("click",function()
+        {
+            if(ifTrue==true)
+            {
+                lastValue.innerHTML=operate(operaterSign,parseInt(lastValue.innerHTML),parseInt(currentValue.innerHTML));
+                currentValue.innerHTML="0";
+                operaterSign=btn.innerHTML;
+            }
+            else
+            {
+                operaterSign=btn.innerHTML;
+                lastValue.innerHTML=currentValue.innerHTML;
+                currentValue.innerHTML="0";
+            }
+        })
+    })
+}
+
 numberBtn();
+operateButtons();
